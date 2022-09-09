@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site in India:</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="Amazon_icon.svg.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<style>
+    *
+{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+.header
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(23, 31, 38);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.logo img
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 50px;
+    border: 0.5px solid rgb(255, 254, 254);
+    background: white;
+    margin-left: 20px;
+}
+#navbarSupportedContent
+{
+    gap: 30px;
+}
+#navbarSupportedContent a
+{
+    color: white;
+}
+.d-flex
+{
+    width: 700px;
+}
+#dropdown
+{
+    width: 100px;
+    border-radius: 10px;
+}
+.nav-item img
+{
+    width: 25px;
+    height: 25px;
+}
+#sign a
+{
+    margin-top: -20px;
+    font-size: 15px;
+}
+.dropdown-menu a
+{
+    background-color: rgb(23, 31, 38);
+}
+#orders a
+{
+    margin-top: -20px;
+}
+#cart a
+{
+    text-decoration: none;
+    font-size: 15px;
+}
+#cart svg
+{
+    width: 30px;
+    height: 30px;
+}
+.navbar
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -5px;
+} 
+.container-fluid a
+{
+    color: white;
+}
+#navbar-2
+{
+    background-color: rgb(48, 70, 110);
+    height: 70px;
+}
+#navbar-2 li a 
+{
+    font-size: 12px;
+    color: white;
+    margin: 5px;
+}
+#navbar-2 li a:hover
+{
+    border: 1px solid white;
+    transition-timing-function: ease-in-out;
+    transition: all;
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+.nav-link img
+{
+    margin-top: -20px;
+    width: auto;
+    height: auto;
+}
+.nav-link img:hover
+{
+    margin: 0%;
+    border: none;
+}
+.carousel-inner
+{
+    margin-top: 70px;
+}
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:20px;
+}
+.card 
+{
+    box-shadow: 2px 2px 10px black;
+    margin: 10px;
+    padding: 10px;
+}
+.upperimg img
+{
+    width: 150px;
+    height: 100px;
+   margin: 10px;
+}
+.lowerimg img
+{
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+}
+.ads img
+{
+    width: 250px;
+    margin-left: -20px;
+    margin-top: 30px;
+}
+#single-data img
+{
+    width: 300px;
+    height: 225px;
+}
+#height
+{
+    width: 200px;
+    height: 150px;
+}
+#link a
+{
+    text-decoration: none;
+    color: black;
+}
+.carousel-item
+{
+    margin-bottom: 50px;
+}
+#container-fluid
+{
+    background-color: rgb(48, 70, 110);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+#container-fluid:hover
+{
+    background-color:rgb(73, 86, 108) ;
+}
+#container-fluid a
+{
+    justify-content: center;
+    text-decoration: none;
+    color: white;;
+}
+#container-fluid a:hover
+{
+    color: white;
+}
+.footer
+{
+    margin-top: -30px;
+    background-color: rgb(22, 34, 56);
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+footer a
+{
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.789);
+}
+.footer a:hover
+{
+    text-decoration: underline;
+    color: rgb(243, 243, 243);
+}
+.footer2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 10px;
+    line-height: 1px;
+    background-color: rgb(56, 56, 66);
+}
+.footer2 a:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+.col1
+{
+    margin-top:50px;
+}
+.col2
+{
+    margin-top:50px;
+}
+.col3
+{
+    margin-top:50px;
+}
+.col4
+{
+    margin-top:50px;
+}
+.footer3
+{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(56, 56, 66);
+    font-size: 12px;
+}
+.footer3 a
+{
+    margin: 30px 10px 30px;
+}
+.footer3 a:hover
+{
+    text-decoration: underline;
+    color: white;
+}
+.footer3 p
+{
+    margin: 30px 10px 30px;
+    color: white;
+}
+@media (min-width:359px) and (max-width:574px)
+{
+    .header
+    {
+        display: block;
+        justify-content: center;
+    }
+    .logo img
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 75px;
+        height: 35px;
+        margin-left: 50px;
+    }
+    .d-flex
+    {
+        width: auto;
+    }
+    .nav-item
+    {
+        margin: auto;
+        width: auto;
+        font-size: 10px;
+    }
+    #sign a
+    {
+        margin-top: 10px;
+        margin-left: 50px;
+        font-size: 10px;
+    }
+    .nav-item img
+    {
+        margin-top: 10px;
+        width: 25px;
+        height: 25px;
+        margin-left: 130px;
+    }
+    #orders a
+    {
+        margin-top: 10px;
+        margin-left: 130px;
+        font-size: 10px;
+    }
+    #cart a
+    {
+        margin-top: 10px;
+        margin-left: 130px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    #cart svg
+    {
+        margin-left: -10px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .nav-link img
+    {
+        display: none;
+    }
+    .navbar
+    {
+        display: block;
+        
+    }
+    #navbar-2
+    {
+        width: auto;
+        height: auto;
+    }
+    #navbar-2 a
+    {
+        font-size: 12px;
+    }
+    #navbar-2 li a 
+    {
+        font-size: 12px;
+    }
+    #carouselExampleIndicators
+    {
+        position: relative;
+        left: 10px;
+    }
+    #single-data img
+    {
+        width: 200px;
+        height: 115px;
+    }
+    .ads{
+        display: none;
+    }
+    .footer
+    {
+        display: block;
+    }
+    .knowus
+    {
+        font-size: 14px;
+       text-align: center;
+    }
+    .connect
+    {
+        font-size: 14px;
+        text-align: center;
+    }
+    .make
+    {
+        font-size: 14px;
+        text-align: center;
+    }
+    .footer2
+    {
+        margin-top: -15px;
+    }
+}
+@media (max-width:575.98px)
+{
+    .header
+    {
+        display: block;
+        justify-content: center;
+    }
+    .logo img
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 50px;
+        position: relative;
+        left:250px;
+    }
+    .d-flex
+    {
+        width: auto;
+    }
+    .nav-item
+    {
+        margin: auto;
+        width: auto;
+        font-size: 10px;
+    }
+    #sign a
+    {
+        margin-top: 10px;
+        margin-left: 250px;
+        font-size: 10px;
+    }
+    .nav-item img
+    {
+        margin-top: 10px;
+        width: 25px;
+        height: 25px;
+        margin-left: 250px;
+    }
+    #orders a
+    {
+        margin-top: 10px;
+        margin-left: 250px;
+        font-size: 10px;
+    }
+    #cart a
+    {
+        margin-top: 10px;
+        margin-left: 130px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    #cart svg
+    {
+        margin-left: 100px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar
+    {
+        display: block;
+        
+    }
+    #navbar-2
+    {
+        width: auto;
+        height: auto;
+    }
+    #navbar-2 a
+    {
+        font-size: 12px;
+    }
+    #navbar-2 li a 
+    {
+        font-size: 12px;
+    }
+    .nav-link img
+    {
+        display: none;
+    }
+    .ads{
+        display: none;
+    }
+}
+@media (max-width:768.98px)
+{
+    .header
+    {
+        display: block;
+        justify-content: center;
+    }
+    .logo img
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 50px;
+        position: relative;
+        left:100px;
+    }
+    .d-flex
+    {
+        width: auto;
+    }
+    .nav-item
+    {
+        margin: auto;
+        width: auto;
+        font-size: 10px;
+    }
+    #sign a
+    {
+        margin-top: 10px;
+        margin-left: 250px;
+        font-size: 10px;
+    }
+    .nav-item img
+    {
+        margin-top: 10px;
+        width: 25px;
+        height: 25px;
+        margin-left: 250px;
+    }
+    #orders a
+    {
+        margin-top: 10px;
+        margin-left: 250px;
+        font-size: 10px;
+    }
+    #cart a
+    {
+        margin-top: 10px;
+        margin-left: 130px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    #cart svg
+    {
+        margin-left: 100px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar
+    {
+        display: block;
+        justify-content: center;
+    }
+    #navbar-2
+    {
+        width: auto;
+        height: auto;
+    }
+    #navbar-2 a
+    {
+        font-size: 10px;
+    }
+    #navbar-2 li a 
+    {
+        font-size: 10px;
+    }
+    .nav-link img
+    {
+        display: none;
+    }
+    .ads{
+        display: none;
+    }
+}
+@media (min-width:576px) and (max-width: 815.98px)
+{
+    .header
+    {
+        display: block;
+        justify-content: center;
+    }
+    .logo img
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 50px;
+        position: relative;
+        left:300px;
+    }
+    .d-flex
+    {
+        width: auto;
+    }
+    .nav-item
+    {
+        margin: auto;
+        width: auto;
+        font-size: 10px;
+    }
+    #sign a
+    {
+        margin-top: 10px;
+        margin-left: 250px;
+        font-size: 10px;
+    }
+    .nav-item img
+    {
+        margin-top: 10px;
+        width: 25px;
+        height: 25px;
+        margin-left: 250px;
+    }
+    #orders a
+    {
+        margin-top: 10px;
+        margin-left: 250px;
+        font-size: 10px;
+    }
+    #cart a
+    {
+        margin-top: 10px;
+        margin-left: 130px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    #cart svg
+    {
+        margin-left: 100px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar
+    {
+        display: block;
+        
+    }
+    #navbar-2
+    {
+        width: auto;
+        height: auto;
+    }
+    #navbar-2 a
+    {
+        font-size: 12px;
+    }
+    #navbar-2 li a 
+    {
+        font-size: 12px;
+    }
+    .nav-link img
+    {
+        display: none;
+    }
+    .ads{
+        display: none;
+    }
+}
+@media (min-width: 767px) and (max-width: 991.98px)
+{
+    .header
+    {
+        display: block;
+        justify-content: center;
+    }
+    .logo img
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 50px;
+        position: relative;
+        left:400px;
+    }
+    .d-flex
+    {
+        width: auto;
+    }
+    .nav-item
+    {
+        margin: auto;
+        width: auto;
+        font-size: 10px;
+    }
+    #sign a
+    {
+        margin-top: 10px;
+        margin-left: 450px;
+        font-size: 10px;
+    }
+    .nav-item img
+    {
+        margin-top: 10px;
+        width: 25px;
+        height: 25px;
+        margin-left: 450px;
+    }
+    #orders a
+    {
+        margin-top: 10px;
+        margin-left: 450px;
+        font-size: 10px;
+    }
+    #cart a
+    {
+        margin-top: 10px;
+        margin-left: 300px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    #cart svg
+    {
+        margin-left: 150px;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar
+    {
+        display: block;
+    }
+    #navbar-2
+    {
+        width: auto;
+        height: auto;
+    }
+    #navbar-2 a
+    {
+        font-size: 10px;
+    }
+    #navbar-2 li a 
+    {
+        font-size: 10px;
+    }
+    .nav-link img
+    {
+        display: none;
+    }
+}
+@media (min-width:990.98px) and (max-width:1024.98px)
+{
+    .header
+    {
+        display: block;
+        justify-content: center;
+    }
+    .logo img
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 50px;
+        position: relative;
+        left:500px;
+    }
+    .nav-link img
+    {
+        display: none;
+    }
+    .d-flex
+    {
+        width: 300px;
+    }
+    #dropdown
+    {
+        margin-left: -350px;
+    }
+    .nav-item a
+    {
+        font-size: 10px;
+    }
+    #sign a
+    {
+        margin-top: -30px;
+        margin-left: -125px;
+        font-size: 10px;
+    }
+    .nav-item img
+    {
+        margin-top: -30px;
+        width: 25px;
+        height: 25px;
+        margin-left: -150px;
+    }
+    #orders a
+    {
+        margin-top: -30px;
+        margin-left: -80px;
+        font-size: 10px;
+    }
+    #cart a
+    {
+        margin-top: -30px;
+        margin-left: 60px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    #cart svg
+    {
+        margin-top: -30px;
+        margin-left: -60px;
+        width: 25px;
+        height: 25px;
+    }
+}
+</style>
+<body>
+  <div id="top">
+    <!-- top -->
+  </div>
+    <div class="header">
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="">
+        </a>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fie%3DUTF8%26useRedirectOnSuccess%3D1%26path%3D%2F&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                  Hello <br><b>Select your address</b>
+                </a>
+              </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <select name="option" id="dropdown">
+                  <option value="option">All</option>
+                  <option value="option">All Categories</option>
+                  <option value="option">Alexa Skills</option>
+                  <option value="option">Amazon Device</option>
+                  <option value="option">Amazon Fashion</option>
+                  <option value="option">Amazon Fresh</option>
+                  <option value="option">Amazon Pharmacy</option>
+                  <option value="option">Appliances</option>
+                </select>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <li class="nav-item">
+                <img src="india.png" alt="india">
+              </li>
+              <li class="nav-item dropdown"  id="sign">
+                <a class="nav-link dropdown-toggle" href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fcart%2Fview.html%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Hello, Sign in <br> <b>Accounts & Lists</b>
+                </a>
+              </li>
+              <li class="nav-item" id="orders" >
+                <a class="nav-link"href="https://www.amazon.in/ap/signin?_encoding=UTF8&accountStatusPolicy=P1&openid.assoc_handle=inamazon&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fgp%2Fcss%2Forder-history%3Fie%3DUTF8%26ref_%3Dnav_orders_first&pageId=webcs-yourorder&showRmrMe=1">
+                  Returns <br> <b>& Orders</b>
+                </a>
+              </li>
+              <li class="nav-item" id="cart">
+                <a href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>Cart
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+    <div class="navbar" id="navbar-2">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">All</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">Best Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">Mobiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/deals?ref_=nav_cs_gb">Today's Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help">Customer Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://www.amazon.in/Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">Electronics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember">Prime</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion">Fashion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/gp/new-releases/?ref_=nav_cs_newreleases">New Releases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home">Home & Kitchen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://www.amazon.in/gp/sva/dashboard?ref_=nav_cs_apay">Amazon Pay</a>
+              </li>
+              <li>
+                <a class="nav-link" href="https://www.amazon.in/computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc">Computers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/b/?_encoding=UTF8&node=6967393031&ref_=nav_swm_IN_swm_appdownload&pf_rd_p=a0e5de05-1a05-4024-9529-e0426d513ff0&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=8CXR6Q0WH943HE5ARBMT">
+                  <img src="18.jpg" alt="download app">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="3.jpg" class="d-block w-100" alt="...">
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+    </div>
+    <div class="container-fluid">
+      <div class="cards" id="margin">
+        <div class="card">
+          <h4>Top Picks For Your Home</h4>
+          <div class="upperimg">
+            <a href="https://www.amazon.in/b?node=3474656031&pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=a9c29b22-66c0-4935-b9b9-983c2385ad35&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=v8lkP&pd_rd_wg=TB4fJ&ref_=pd_gw_unk" target="_blank">
+              <img src="9.jpg" alt="">
+            </a>
+            <a href="https://www.amazon.in/l/1380365031?pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=a9c29b22-66c0-4935-b9b9-983c2385ad35&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=v8lkP&pd_rd_wg=TB4fJ&ref_=pd_gw_unk" target="_blank">
+                <img src="10.jpg" alt="">
+            </a><br>
+          </div>
+          <div class="lowerimg" id="lower-box1">
+            <a href="https://www.amazon.in/b?node=1380072031&pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=a9c29b22-66c0-4935-b9b9-983c2385ad35&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=v8lkP&pd_rd_wg=TB4fJ&ref_=pd_gw_unk" target="_blank">
+              <img src="11.jpg" alt="">
+            </a>
+            <a href="https://www.ad:\Softwares\VS Code\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmlmazon.in/l/1380369031?pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=a9c29b22-66c0-4935-b9b9-983c2385ad35&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=v8lkP&pd_rd_wg=TB4fJ&ref_=pd_gw_unk" target="_blank">
+                <img src="12.jpg" alt="">
+            </a><br>
+          </div>
+            <div class="card-body">
+              <a href="https://www.amazon.in/l/1380072031?pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=a9c29b22-66c0-4935-b9b9-983c2385ad35&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=v8lkP&pd_rd_wg=TB4fJ&ref_=pd_gw_unk" target="_blank" class="btn btn-primary">See More</a>
+            </div>
+        </div>
+        <div class="card">
+          <div class="upperimg">
+            <h4>Up to 60% off | Styles <br> for Women</h4>
+                    <a href="https://www.amazon.in/b?node=1953602031&pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=c5b53090-79d9-4850-8fa0-6bb5627b9185&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=37DIq&pd_rd_wg=TB4fJ&ref_=pd_gw_unk">
+                        <img src="13.jpg" alt="">
+                    </a>
+                    <a href="https://www.amazon.in/b?node=18982337031&pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=c5b53090-79d9-4850-8fa0-6bb5627b9185&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=37DIq&pd_rd_wg=TB4fJ&ref_=pd_gw_unk">
+                        <img src="14.jpg" alt="">
+                    </a><br>
+          </div>
+          <div class="lowerimg" id="">
+                    <a href="https://www.amazon.in/s/ref=mega_sv_s23_1_3_1_1?rh=i%3Awatches%2Cn%3A2563505031&ie=UTF8&lo=watches&pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=c5b53090-79d9-4850-8fa0-6bb5627b9185&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=37DIq&pd_rd_wg=TB4fJ&ref_=pd_gw_unk">
+                      <img src="15.jpg" alt="">
+                    </a>
+                    <a href="https://www.amazon.in/b?node=5210079031&pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=c5b53090-79d9-4850-8fa0-6bb5627b9185&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=37DIq&pd_rd_wg=TB4fJ&ref_=pd_gw_unk">
+                        <img src="16.jpg" alt="">
+                    </a><br>
+          </div>
+          <div class="card-body">
+                    <a href="https://www.amazon.in/b/ref=sl_gw_feb20?node=6648217031&pf_rd_r=1KF8N0N7JWZM5NVMN5VG&pf_rd_p=c5b53090-79d9-4850-8fa0-6bb5627b9185&pd_rd_r=6b902214-defb-495d-a8b8-0132a9abbb03&pd_rd_w=37DIq&pd_rd_wg=TB4fJ&ref_=pd_gw_unk" target="_blank" class="btn btn-primary">See All Offers</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upperimg" id="single-data">
+            <h4>Up to 70% off | Clearance <br> store</h4>
+            <a href="https://www.amazon.in/s?rh=n%3A20538600031&language=en_IN&brr=1&rd=1">
+              <img src="31.jpg" alt="...">
+            </a>
+            <div class="card-body">
+              <a href="https://www.amazon.in/s?rh=n%3A20538600031&language=en_IN&brr=1&rd=1"target="_blank" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="height">
+          <div class="head">
+              <h5> Sign in for your <br>best experience </h5>
+              <br>
+          </div>
+          <div class="signbtn">
+            <button class="btn btn-warning">Sign in securely
+            </button>
+          </div>
+          <div class="ads">
+            <a href="https://www.amazon.in/Laptops/b?ie=UTF8&node=1375424031&ref_=sd_allcat_sbc_mobcomp_laptops" target="_blank">
+              <img src="../PHOTOS/ads.jpg" alt="...">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upperimg">
+            <h4>Up to 60% off | Styles <br> for Men</h4>
+                <a href="https://www.amazon.in/b?node=1968024031">
+                  <img src="19.jpg" alt="">
+                </a>
+                <a href="https://www.amazon.in/b?node=1983518031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=d66c2cf9-86d6-4691-8f1c-4e26ecf8278a&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=Puxt2&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+                  <img src="20.jpg" alt="">
+                </a><br>
+          </div>
+          <div class="lowerimg">
+            <a href="https://www.amazon.in/b?node=2563504031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=d66c2cf9-86d6-4691-8f1c-4e26ecf8278a&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=Puxt2&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+              <img src="21.jpg" alt="">
+            </a>
+            <a href="https://www.amazon.in/b?node=2454169031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=d66c2cf9-86d6-4691-8f1c-4e26ecf8278a&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=Puxt2&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+              <img src="22.jpg" alt="">
+            </a><br>
+          </div>
+          <div class="card-body">
+            <a href="https://www.amazon.in/b/ref=sl_gw_feb20?node=6648217031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=d66c2cf9-86d6-4691-8f1c-4e26ecf8278a&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=Puxt2&pd_rd_wg=T7tuz&ref_=pd_gw_unk" target="_blank" class="btn btn-primary">
+              See All Offers
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upperimg">
+            <h4>Shop by Category</h4>
+                <a href="https://www.amazon.in/alm/storefront?almBrandId=ctnow&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=dbcfb001-76fa-49bc-ada6-a13d343a1124">
+                  <img src="23.jpg" alt="">
+                </a>
+                <a href="https://www.amazon.in/b/?ie=UTF8&node=1389401031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=847e03dc-32e6-4b73-b164-807ff4502869&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=TVWaV&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+                  <img src="24.jpg" alt="">
+                </a><br>
+          </div>
+          <div class="lowerimg">
+            <a href="https://www.amazon.in/b?node=6648217031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=847e03dc-32e6-4b73-b164-807ff4502869&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=TVWaV&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+              <img src="25.jpg" alt="">
+            </a>
+            <a href="https://www.amazon.in/b?node=976419031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=847e03dc-32e6-4b73-b164-807ff4502869&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=TVWaV&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+              <img src="26.jpg" alt="">
+            </a><br>
+          </div>
+          <div class="card-body">
+            <a href="" target="_blank" class="btn btn-primary">
+              See More
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upperimg">
+            <h4>  Automotive essentials | <br> Up to 60% off</h4>
+                <a href="">
+                  <img src="27.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="28.jpg" alt="">
+                </a><br>
+          </div>
+          <div class="lowerimg">
+            <a href="">
+              <img src="29.jpg" alt="">
+            </a>
+            <a href="">
+              <img src="30.jpg" alt="">
+            </a><br>
+          </div>
+          <div class="card-body">
+            <a href="" target="_blank" class="btn btn-primary">
+              See More
+            </a>
+          </div>
+        </div>
+        <div class="card">
+            <div class="upperimg">
+              <h4>Amazon Pay | Book your <br> travel tickets</h4>
+                <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fbus-tickets%3Fref_%3Dperc_bosb_desktop&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_hfctl_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank">
+                <img src="32.jpg" alt="">
+                </a>
+                <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fbus-tickets%3Fref_%3Dperc_bosb_desktop&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_hfctl_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank">
+                <img src="33.jpg" alt="">
+                </a><br>
+            </div>
+            <div class="lowerimg">
+                <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fbus-tickets%3Fref_%3Dperc_bosb_desktop&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_hfctl_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank">
+                <img src="34.jpg" alt="">
+              </a>
+                <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fbus-tickets%3Fref_%3Dperc_bosb_desktop&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_hfctl_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank">
+                <img src="35.jpg" alt="">
+              </a><br>
+            </div>
+            <div class="card-body">
+              <a href="https://www.amazon.in/gp/sva/dashboard?ref_=gw_apay_travel_qcpc&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=c99b631f-3c12-464b-85b0-51a1028440bf&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=4KwBC&pd_rd_wg=T7tuz" target="_blank">
+                <button class="btn btn-primary"> Explore more with Amazon Pay</button>
+              </a>
+            </div>
+        </div>
+        <div class="card">
+          <div class="upperimg">
+            <h4>Revamp your home in style</h4>
+            <a href="https://www.amazon.in/b?node=1380442031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=1846b953-c1b3-4009-9300-c4e8fef219a3&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=CZ5mG&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+              <img src="36.jpg" alt="">
+            </a>
+            <a href="https://www.amazon.in/b?node=1380374031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=1846b953-c1b3-4009-9300-c4e8fef219a3&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=CZ5mG&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+              <img src="37.jpg" alt="">
+            </a><br>
+          </div>
+          <div class="lowerimg">
+            <a href="https://www.amazon.in/b?node=1380510031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=1846b953-c1b3-4009-9300-c4e8fef219a3&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=CZ5mG&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+              <img src="38.jpg" alt="">
+            </a>
+            <a href="https://www.amazon.in/b?node=1380485031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=1846b953-c1b3-4009-9300-c4e8fef219a3&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=CZ5mG&pd_rd_wg=T7tuz&ref_=pd_gw_unk">
+              <img src="39.jpg" alt="">
+            </a><br>
+          </div>
+          <div class="card-body">
+            <a href="https://www.amazon.in/b?node=12414705031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=1846b953-c1b3-4009-9300-c4e8fef219a3&pd_rd_r=0ecf3ec9-51b8-45b6-9111-6003b4f9821d&pd_rd_w=CZ5mG&pd_rd_wg=T7tuz&ref_=pd_gw_unk" target="_blank">
+              <button class="btn btn-primary">Explore All</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="upperimg">
+            <h4>Keep Shopping For</h4>
+            <a href="https://www.amazon.in/Kingston-DataTraveler-Exodia-DTX-Flash/dp/B08JD36C6H/?_encoding=UTF8&pd_rd_w=A6kv3&content-id=amzn1.sym.6aeb164c-387d-440e-8808-65edf45c4683&pf_rd_p=6aeb164c-387d-440e-8808-65edf45c4683&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pd_rd_wg=cj7jh&pd_rd_r=d59ddc5b-38a5-42f5-bfef-78fe919ab832&ref_=pd_gw_ci_mcx_mr_hp_atf_m">
+              <img src="40.jpg" alt="">
+            </a>
+            <a href="https://www.amazon.in/YNS-Crafts-Stock-Celebration-Balloon/dp/B07X3XVPCN/?_encoding=UTF8&pd_rd_w=A6kv3&content-id=amzn1.sym.6aeb164c-387d-440e-8808-65edf45c4683&pf_rd_p=6aeb164c-387d-440e-8808-65edf45c4683&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pd_rd_wg=cj7jh&pd_rd_r=d59ddc5b-38a5-42f5-bfef-78fe919ab832&ref_=pd_gw_ci_mcx_mr_hp_atf_m">
+              <img src="41.jpg" alt="">
+            </a><br>
+          </div>
+          <div class="lowerimg">
+            <a href="https://www.amazon.in/Pampers-Protection-Double-diapers-Diapers/dp/B0B9XQVWX2/?_encoding=UTF8&pd_rd_w=A6kv3&content-id=amzn1.sym.6aeb164c-387d-440e-8808-65edf45c4683&pf_rd_p=6aeb164c-387d-440e-8808-65edf45c4683&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pd_rd_wg=cj7jh&pd_rd_r=d59ddc5b-38a5-42f5-bfef-78fe919ab832&ref_=pd_gw_ci_mcx_mr_hp_atf_m">
+              <img src="42.jpg" alt="">
+            </a>
+            <a href="https://www.amazon.in/Sahasra-PENDRIVE-64GB/dp/B0B21SSX7S/?_encoding=UTF8&pd_rd_w=A6kv3&content-id=amzn1.sym.6aeb164c-387d-440e-8808-65edf45c4683&pf_rd_p=6aeb164c-387d-440e-8808-65edf45c4683&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pd_rd_wg=cj7jh&pd_rd_r=d59ddc5b-38a5-42f5-bfef-78fe919ab832&ref_=pd_gw_ci_mcx_mr_hp_atf_m">
+              <img src="43.jpg" alt="">
+            </a><br>
+          </div>
+          <div class="card-body">
+            <a href="https://www.amazon.in/b?node=976392031&pf_rd_r=GN1SNEA5X7XYG9RSQM9J&pf_rd_p=897fd410-33e9-4bd0-ad0f-a0b2dc0bafca&pd_rd_r=d59ddc5b-38a5-42f5-bfef-78fe919ab832&pd_rd_w=RU8cT&pd_rd_wg=cj7jh&ref_=pd_gw_unk" target="_blank">
+              <button class="btn btn-primary">See More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p><h4>Frequently repurchased in Grocery</h4></p>
+            <a href="">
+              <img src="1-5.jpg" class="d-block w-100" alt="...">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img src="6-10.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="11-16.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <footer>
+    <div id="container-fluid">
+      <a href="#top">Back to Top</a>
+    </div>
+    <div class="footer">
+      <div class="knowus">
+        <h4>Get to Know Us</h4>
+        <p><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer">About us</a></p>
+        <p><a href="https://amazon.jobs/en/">Careers</a></p>
+        <p><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">Press Releases</a></p>
+        <p><a href="https://www.amazon.in/gp/browse.html?node=8872558031&ref_=footer_cares">Amazon Cares</a></p>
+        <p><a href="https://www.amazon.in/gp/browse.html?node=4594605031&ref_=footer_smile">Gift a Smile</a></p>
+        <p><a href="https://www.amazon.science/">Amazon Science</a></p>
+      </div>
+      <div class="connect">
+        <h4>Connect with Us</h4>
+        <p><a href="https://www.facebook.com/AmazonIN">Facebook</a></p>
+        <p><a href="https://twitter.com/AmazonIN">Twitter</a>
+        </p>
+        <p> <a href="https://www.instagram.com/amazondotin/">Instagram</a></p>
+      </div>
+      <div class="make">
+        <h4>Make Money With Us</h4>
+        <p><a href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter&ref_=nav_footer_sell">Sell on Amazon</a></p>
+        <p><a href="https://www.amazon.in/b/?node=16192220031&ref_=map_1_b2b_GW_FT">Sell Under Amazon Accelerator</a></p>
+        <p><a href="https://sell.amazon.in/grow-your-business/amazon-global-selling?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1">Amazon Global Selling</a></p>
+       <p> <a href="https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc">Become an Affiliate</a></p>
+        <p><a href="https://sell.amazon.in/sell-online/fulfillment-by-amazon?ref_=asin_soa_rd&ld=AWRGINFBAfooter">Fulfilment by Amazon</a></p>
+        <p><a href="https://advertising.amazon.com/en-gb?ref=Amz.in">Advertise Your Products</a></p>
+        <p><a href="https://www.amazonpay.in/merchant">Amazon Pay on Merchants</a></p>
+      </div>
+    </div>
+    <div class="footer2" id="c">
+      <div class="col1">
+        <a href="https://www.abebooks.com/">
+          <h6>Abebooks</h6>
+          <p>Books, art</p>
+          <p>& collectibles</p>
+        </a>
+        <br>
+        <a href="https://www.shopbop.com/">
+          <h6>Shopbop</h6>
+          <p>Designer</p>
+          <p>Fashion Brands</p>
+        </a>
+      </div>
+      <div class="col2">
+        <a href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter">
+          <h6>Amazon Web Services</h6>
+          <p>Scalable Cloud</p>
+          <p>Computing Services</p>
+        </a>
+        <br>
+        <a href="https://www.amazon.in/l/21102587031?ref=footer_aingw">
+          <h6>Amazon Business</h6>
+          <p>Everything For</p>
+          <p>Your Business</p>
+        </a>
+      </div>
+      <div class="col3">
+        <a href="https://www.audible.in/">
+          <h6>Audible</h6>
+          <p>Download</p>
+          <p>Audio Books</p>
+        </a>
+        <br>
+        <a href="https://www.amazon.in/l/8557209031?ref=footer_amznow">
+          <h6>Prime Now</h6>
+          <p>2-Hour Delivery</p>
+          <p>on Everyday items</p>
+        </a>
+      </div>
+      <div class="col4">
+        <a href="https://www.dpreview.com/">
+          <h6>DPReview</h6>
+          <p>Digital</p>
+          <p>Photography</p>
+        </a>
+        <br>
+        <a href="https://www.amazon.in/music/prime?ref=footer_apm">
+          <h6>Amazon Prime Music</h6>
+          <p>90 million songs, ad-free</p>
+          <p>Over 15 million podcase episodes</p>
+        </a>
+      </div>
+    </div>
+    <div class="footer3">
+      <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou">Conditions of Use & Sale</a>
+      <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy">Privacy Notice</a>
+      <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba">Interest-Based Ads</a>
+      <p>&copy; 1996 - 2022, Amazon.com, Inc. or its affiliates</p>
+    </div>
+  </footer>
+</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>
+
